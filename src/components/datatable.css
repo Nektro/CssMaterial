@@ -1,0 +1,14 @@
+table.datatable {
+  width: calc(100% - 48px);
+  margin: 24px;
+}
+table.datatable thead {
+  color: #aaa;
+}
+table.datatable tr {
+  height: 48px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+table.datatable tbody tr:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
