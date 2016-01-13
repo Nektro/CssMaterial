@@ -33,3 +33,6 @@ header.header nav ul li a {
 header.header.with-side-nav {
   margin-left: 240px;
 }
+header.header .container {
+  padding: 0px;
+}

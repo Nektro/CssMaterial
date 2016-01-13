@@ -9,9 +9,9 @@
       var f = function() {
         var b = window.getComputedStyle(a, null).getPropertyValue("left");
         var l = parseInt(b.substring(0,b.length-2));
-        a.style.left = (l+8) + "px";
+        a.style.left = (l+20) + "px";
         if (l < 240) {
-          setTimeout(f, 1);
+          requestAnimationFrame(f);
         }
         else {
           a.style.left = "240px";
@@ -26,9 +26,9 @@
           var f = function() {
             var b = window.getComputedStyle(a, null).getPropertyValue("left");
             var l = parseInt(b.substring(0,b.length-2));
-            a.style.left = (l-8) + "px";
+            a.style.left = (l-20) + "px";
             if (l > 0) {
-              setTimeout(f, 1);
+              requestAnimationFrame(f);
             }
             else {
               a.style.left = "0px";

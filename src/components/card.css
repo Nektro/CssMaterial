@@ -23,4 +23,5 @@ div.card > div.cardaction > a.btn {
   background-color: inherit;
   color: #2196f3;
   box-shadow: none;
+  cursor: pointer;
 }

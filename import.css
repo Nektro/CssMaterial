@@ -9,6 +9,7 @@
 @import url('src/components/button.css');  /* https://www.google.com/design/spec/components/buttons.html */
 @import "src/components/datatable.css"; /* https://www.google.com/design/spec/components/data-tables.html */
 @import "src/components/card.css";      /* https://www.google.com/design/spec/components/cards.html */
+@import "src/components/textfield.css"; /* https://www.google.com/design/spec/components/text-fields.html */
 @import url('src/extras/sidenav.css');     /* */
 @import url('src/extras/footer.css');      /* */
 @import url('src/color.css');              /* https://www.google.com/design/spec/style/color.html */
@@ -34,7 +35,6 @@
  https://www.google.com/design/spec/components/snackbars-toasts.html
  https://www.google.com/design/spec/components/steppers.html
  https://www.google.com/design/spec/components/tabs.html
- https://www.google.com/design/spec/components/text-fields.html
  https://www.google.com/design/spec/components/tooltips.html
 */
 /* spec pages left to the artist...
