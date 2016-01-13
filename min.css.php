@@ -12,9 +12,9 @@ function minifiyCss($css) {
 }
 
 header("Content-type: text/css");
+echo "@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css';\n";
+echo "@import 'https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500';\n";
 echo minifiyCss(fileGetAll(array(
-  'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css',
-  'https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500',
   'src/components/header.css',
   'src/components/fab.css',
   'src/components/button.css',
