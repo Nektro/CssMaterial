@@ -1,8 +1,5 @@
 # CssMaterial
-A Material Design implementation in CSS
-
-_Was https://github.com/Nektro/CssMaterial but GitHub for desktop doesn't support submodules,
-so now it's here._
+A Material Design implementation in CSS.
 
 Give a little Material Design to your website with CssMaterial. All features require classes on the appropriate
 tags, so only use the components you need!
