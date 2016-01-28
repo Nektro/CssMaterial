@@ -17,6 +17,10 @@ body > #overlay {
     top: 0px;
     left: 0px;
 }
+a {
+  text-decoration: none;
+  color: #039be5;
+}
 .right {
   float: right;
 }
