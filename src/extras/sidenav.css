@@ -16,7 +16,6 @@ nav#side-nav.pull-out {
 nav#side-nav > .logo {
     height: 40px;
     padding: 12px 0px 12px 24px;
-    //border-bottom: 1px solid #e0e0e0;
 }
 nav#side-nav > .logo span {
     font-size: 24px;
