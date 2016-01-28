@@ -36,3 +36,10 @@ header.header.with-side-nav {
 header.header .container {
   padding: 0px;
 }
+header.header.thin nav {
+  height: 32px;
+}
+header.header.thin nav .title {
+  line-height: 32px;
+  font-size: 16px;
+}
