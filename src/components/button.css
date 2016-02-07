@@ -12,6 +12,7 @@ a.btn {
   text-decoration: none;
   background-color: #2196f3;
   color: white;
+  cursor: pointer;
 }
 a.btn:hover {
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
