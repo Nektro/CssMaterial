@@ -3,7 +3,7 @@
 })();
 (function() {
   // slide out navbar
-  var a = document.getElementById("side-nav") | document.createElement('div');
+  var a = document.getElementById("side-nav") || document.createElement('div');
   if (a.className === "pull-out") {
     document.getElementsByClassName("sidenavcontrol")[0].addEventListener('click', function(e) {
       var f = function() {
