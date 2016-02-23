@@ -9,6 +9,9 @@ table.datatable tr {
   height: 48px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+table.datatable tr td {
+  padding: 10px;
+}
 table.datatable tbody tr:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

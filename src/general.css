@@ -32,6 +32,11 @@ nav#side-nav.fixed + main {
     margin: auto;
     padding: 15px;
 }
+@media (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
 .center {
   text-align: center;
 }
@@ -54,6 +59,14 @@ div.subhead {
 header > nav {
   background-color: #2196f3;
   color: black;
+}
+
+/* inline list */
+ul.inline-list {
+  list-style-type: none;
+}
+ul.inline-list li {
+  display: inline-block;
 }
 
 /* sticky footer */
