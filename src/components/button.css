@@ -1,4 +1,5 @@
-a.btn {
+a.btn,
+button.btn {
   display: inline-block;
   padding-left: 16px;
   padding-right: 16px;
@@ -13,10 +14,13 @@ a.btn {
   background-color: #2196f3;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
+button.btn:hover,
 a.btn:hover {
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
 }
+button.btn-large,
 a.btn-large {
     display: inline-block;
     padding-left: 16px;
@@ -34,4 +38,7 @@ a.btn-large {
 
     height: 54px;
     line-height: 56px;
+}
+button.btn {
+  border: 0px;
 }

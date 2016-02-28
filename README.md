@@ -1,39 +1,14 @@
 # CssMaterial
-A Material Design implementation in CSS.
+CssMaterial is a project with the aim of producing a working implementation of Material Design by Google
+all while using as little Javascript as possible.
 
-Give a little Material Design to your website with CssMaterial. All features require classes on the appropriate
-tags, so only use the components you need!
+All features were designed as a library so you only style what you add the appropriate classes to!
 
 This is a WIP project so all features outlined in the spec may not be available.
 
-### Feature Roadmap
-- [x] Page headers
-- [x] Floating action buttons
-- [x] Buttons
-- [x] Data tables
-- [x] Cards
-- [x] Side navigation (pull-out and fixed)
-- [x] Footers
-- [x] Color classes
-- [x] Text color classes
-- [x] Grid layout helper
-- [ ] Bottom sheets
-- [ ] Chips
-- [ ] Dialog modals
-- [ ] Dividers
-- [ ] Grid lists
-- [ ] Lists
-- [ ] List w/ controls
-- [ ] Menus
-- [ ] Pickers
-- [ ] Progress bars
-- [ ] Form / selection controls
-- [ ] Sliders
-- [ ] Toasts
-- [ ] Steppers
-- [ ] Tabs
-- [ ] Text fields
-- [ ] Tooltips
-
 ### More info
 See the whole Material Design spec [here](https://www.google.com/design/spec/)
+
+### License
+CssMaterial is licensed under the MIT license so you are free to use it any project, personal or commercial,
+and modify it to fit your needs. CssMaterial is distributed AS IS WITHOUT WARRANTY.

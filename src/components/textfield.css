@@ -1,7 +1,6 @@
 form.form div.form-input {
   height: 60px;
   margin: 12px 0px;
-  margin-bottom: 45px;
   position: relative;
 }
 form.form div.form-input > input {
