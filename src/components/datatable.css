@@ -1,17 +1,17 @@
 table.datatable {
-  width: calc(100% - 48px);
-  margin: 24px;
+    width: calc(100% - 48px);
+    margin: 24px;
 }
 table.datatable thead {
-  color: #aaa;
+    color: #aaa;
 }
 table.datatable tr {
-  height: 48px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 48px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 table.datatable tr td {
-  padding: 10px;
+    padding: 10px;
 }
 table.datatable tbody tr:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

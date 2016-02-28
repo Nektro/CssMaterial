@@ -1,35 +1,38 @@
 form.form div.form-input {
-  height: 60px;
-  margin: 12px 0px;
-  position: relative;
+    height: 60px;
+    margin: 12px 0px;
+    position: relative;
 }
 form.form div.form-input > input {
-  margin-bottom: 16px;
-  width: 100%;
-  font-size: 18px;
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 18px;
 }
 form.form div.form-input > input {
-  border: none;
-  border-bottom: 2px solid #aaa;
-  transition: 0.2s ease all;
-  outline: none;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    transition: 0.2s ease all;
+    outline: none;
 }
 form.form div.form-input > input:focus,
 form.form div.form-input > input:valid {
-  border-bottom: 2px solid #3f51b5;
+    border-bottom: 2px solid #3f51b5;
 }
-/* raised label from https://scotch.io/tutorials/google-material-design-input-boxes-in-css3 */
 form.form div.form-input > label {
-  font-size: 18px;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 0px;
-  transition: 0.2s ease all;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 0px;
+    transition: 0.2s ease all;
 }
 form.form div.form-input > input:focus ~ label,
 form.form div.form-input > input:valid ~ label {
-  font-size: 14px;
-  top: -20px;
-  color: #3f51b5;
+    font-size: 14px;
+    top: -20px;
+    color: #3f51b5;
+}
+form.form div.form-input > input[type=date] ~ label {
+    font-size: 14px;
+    top: -20px;
 }

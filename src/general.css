@@ -18,14 +18,14 @@ body > #overlay {
     left: 0px;
 }
 a {
-  text-decoration: none;
-  color: #039be5;
+    text-decoration: none;
+    color: #039be5;
 }
 .right {
-  float: right;
+    float: right;
 }
 nav#side-nav.fixed + main {
-  margin-left: 240px;
+    margin-left: 240px;
 }
 .container {
     width: 70%;
@@ -33,17 +33,17 @@ nav#side-nav.fixed + main {
     padding: 15px;
 }
 @media (max-width: 960px) {
-  .container {
-    width: 100%;
-  }
+    .container {
+        width: 100%;
+    }
 }
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 h1.heading, h2.heading, h3.heading, h4.heading, h5.heading, h6.heading {
-  font-weight: 400;
-  margin: 0px;
+    font-weight: 400;
+    margin: 0px;
 }
 h1.heading, h2.heading { font-size: 300%; font-weight: 500; }
 h3.heading, h4.heading { font-size: 200%; }
@@ -51,41 +51,41 @@ h5.heading, h6.heading { font-size: 100%; }
 
 /* https://www.google.com/design/spec/components/subheaders.html */
 div.subhead {
-  font-weight: 300;
-  color: gray;
+    font-weight: 300;
+    color: gray;
 }
 
 /* default coloring so that everything isn't white */
 header > nav {
-  background-color: #2196f3;
-  color: black;
+    background-color: #2196f3;
+    color: black;
 }
 
 /* inline list */
 ul.inline-list {
-  list-style-type: none;
+    list-style-type: none;
 }
 ul.inline-list li {
-  display: inline-block;
+    display: inline-block;
 }
 
 /* text align helpers */
 .left-text {
-  text-align: left;
+    text-align: left;
 }
 .right-text {
-  text-align: right;
+    text-align: right;
 }
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 /* sticky footer */
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
