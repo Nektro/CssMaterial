@@ -69,6 +69,17 @@ ul.inline-list li {
   display: inline-block;
 }
 
+/* text align helpers */
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}
+.center-text {
+  text-align: center;
+}
+
 /* sticky footer */
 body {
   display: flex;
