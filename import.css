@@ -3,6 +3,8 @@
 /* https://www.google.com/design/spec/style/icons.html
  * https://www.google.com/design/spec/style/typography.html */
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500');
+/* button waves-effect */
+@import "https://rawgit.com/fians/Waves/master/dist/waves.css";
 
 @import url('src/components/header.css');  /* https://www.google.com/design/spec/components/toolbars.html */
 @import url('src/components/fab.css');     /* https://www.google.com/design/spec/components/buttons-floating-action-button.html */

@@ -1,7 +1,6 @@
 (function() {
+  // add overlay div
   document.body.innerHTML += "<div id='overlay'></div>";
-})();
-(function() {
   // slide out navbar
   var a = document.getElementById("side-nav") || document.createElement('div');
   if (a.className === "pull-out") {
@@ -40,4 +39,7 @@
       }
     });
   }
+  // button waves effect
+  Waves.attach('.btn');
+  Waves.init();
 })();
