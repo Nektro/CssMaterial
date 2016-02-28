@@ -12,6 +12,9 @@ header.header nav .title a {
   text-decoration: none;
   color: inherit;
 }
+header.header nav .title a img {
+  vertical-align: middle;
+}
 header.header nav > ul {
   list-style-type: none;
   display: inline-block;
@@ -31,29 +34,10 @@ header.header nav > ul.right {
   padding-right: 32px;
 }
 
-/*
-header.header nav ul {
-  list-style-type: none;
-  display: inline;
-  box-sizing: inherit;
-  margin: 0px 10px;
-}
-header.header nav ul li {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0px 15px;
-}
-header.header nav ul li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-header.header nav ul li a {
-  cursor: pointer;
-}
-*/
-header.header.with-side-nav {
+
+/*header.header.with-side-nav {
   margin-left: 240px;
-}
+}*/
 header.header .container {
   padding: 0px;
 }
