@@ -25,6 +25,11 @@ header.header nav > ul {
 header.header nav > ul > li {
     padding: 0px 10px;
     line-height: 64px;
+    display: inline-block;
+    vertical-align: top;
+}
+header.header nav > ul > li * {
+    vertical-align: middle;
 }
 header.header.thin nav > ul > li {
     line-height: 32px;
@@ -33,11 +38,6 @@ header.header nav > ul.right {
     float: right;
     padding-right: 32px;
 }
-
-
-/*header.header.with-side-nav {
-margin-left: 240px;
-}*/
 header.header .container {
     padding: 0px;
 }
@@ -49,8 +49,13 @@ header.header.thin nav .title {
     font-size: 16px;
 }
 header.header.sticky {
-    /*
-    position: absolute;
+    position: fixed;
     top: 0px;
-    */
+    width: 100%;
+    z-index: 10;
+    background-color: inherit;
+    margin-bottom: 64px;
+}
+header.header.sticky ~ main {
+    margin-top: 64px;
 }
