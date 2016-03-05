@@ -32,7 +32,8 @@ form.form div.form-input > input:valid ~ label {
     top: -20px;
     color: #3f51b5;
 }
-form.form div.form-input > input[type=date] ~ label {
+form.form div.form-input > input[type=date] ~ label,
+form.form div.form-input > input[disabled] ~ label {
     font-size: 14px;
     top: -20px;
 }
