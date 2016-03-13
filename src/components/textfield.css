@@ -37,3 +37,6 @@ form.form div.form-input > input[disabled] ~ label {
     font-size: 14px;
     top: -20px;
 }
+form.form div.form-input:last-of-type {
+    height: 20px;
+}
