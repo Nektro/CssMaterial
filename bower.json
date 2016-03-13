@@ -1,0 +1,24 @@
+{
+  "name": "CssMaterial",
+  "description": "A Material Design implementation in almost entirely CSS",
+  "main": "import.css",
+  "moduleType": [],
+  "keywords": [
+    "css",
+    "material",
+    "design",
+	"library"
+  ],
+  "authors": [
+    "Nektro"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Nektro/CssMaterial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
