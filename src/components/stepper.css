@@ -4,7 +4,6 @@ form.form fieldset.stepper {
     margin: 0px 10px
 }
 form.form fieldset.stepper > legend {
-    margin-bottom: 20px;
     font-weight: 500;
 }
 form.form fieldset.stepper > legend > div.step {
