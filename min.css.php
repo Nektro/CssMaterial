@@ -24,6 +24,7 @@ echo minifiyCss(fileGetAll(array(
     'src/components/textfield.css',
     'src/components/form-radio.css',
     'src/components/form-switch.css',
+    'src/components/stepper.css',
     'src/extras/sidenav.css',
     'src/extras/footer.css',
     'src/color.css',

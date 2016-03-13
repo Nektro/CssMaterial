@@ -1,0 +1,23 @@
+form.form fieldset.stepper {
+    border: 0px;
+    border-left: 2px solid #ddd;
+    margin: 0px 10px
+}
+form.form fieldset.stepper > legend {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+form.form fieldset.stepper > legend > div.step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: -26px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: normal;
+}
