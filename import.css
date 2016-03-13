@@ -1,45 +1,18 @@
-/* style normalization */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css');
-/* https://www.google.com/design/spec/style/icons.html
-* https://www.google.com/design/spec/style/typography.html */
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500');
-/* button waves-effect */
 @import "https://rawgit.com/fians/Waves/master/dist/waves.css";
 
-@import url('src/components/header.css');  /* https://www.google.com/design/spec/components/toolbars.html */
-@import url('src/components/fab.css');     /* https://www.google.com/design/spec/components/buttons-floating-action-button.html */
-@import url('src/components/button.css');  /* https://www.google.com/design/spec/components/buttons.html */
-@import "src/components/datatable.css"; /* https://www.google.com/design/spec/components/data-tables.html */
-@import "src/components/card.css";      /* https://www.google.com/design/spec/components/cards.html */
-@import "src/components/textfield.css"; /* https://www.google.com/design/spec/components/text-fields.html */
-@import url('src/extras/sidenav.css');     /* */
-@import url('src/extras/footer.css');      /* */
-@import url('src/color.css');              /* https://www.google.com/design/spec/style/color.html */
-@import url('src/grid.css');               /* https://www.google.com/design/spec/layout/responsive-ui.html */
+@import url('src/components/header.css');
+@import url('src/components/fab.css');
+@import url('src/components/button.css');
+@import "src/components/datatable.css";
+@import "src/components/card.css";
+@import "src/components/textfield.css";
+@import "src/components/form-radio.css";
+@import "src/components/form-switch.css";
+@import "src/components/stepper.css";
+@import url('src/extras/sidenav.css');
+@import url('src/extras/footer.css');
+@import url('src/color.css');
+@import url('src/grid.css');
 @import url('src/general.css');
-/* general.css includes misc stlyes to make everything nice, as well as:
-https://www.google.com/design/spec/components/subheaders.html
-*/
-
-/* TODO
-https://www.google.com/design/spec/components/bottom-sheets.html
-https://www.google.com/design/spec/components/chips.html
-https://www.google.com/design/spec/components/dialogs.html
-https://www.google.com/design/spec/components/dividers.html
-https://www.google.com/design/spec/components/grid-lists.html
-https://www.google.com/design/spec/components/lists.html
-https://www.google.com/design/spec/components/lists-controls.html
-https://www.google.com/design/spec/components/menus.html
-https://www.google.com/design/spec/components/pickers.html
-https://www.google.com/design/spec/components/progress-activity.html
-https://www.google.com/design/spec/components/selection-controls.html
-https://www.google.com/design/spec/components/sliders.html
-https://www.google.com/design/spec/components/snackbars-toasts.html
-https://www.google.com/design/spec/components/steppers.html
-https://www.google.com/design/spec/components/tabs.html
-https://www.google.com/design/spec/components/tooltips.html
-*/
-/* spec pages left to the artist...
-* https://www.google.com/design/spec/style/imagery.html
-* https://www.google.com/design/spec/style/writing.html
-*/
