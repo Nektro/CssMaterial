@@ -1,0 +1,28 @@
+ul.collapsible {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.collapsible > li {
+    border-bottom: 1px solid #ddd;
+}
+ul.collapsible > li > div:first-child {
+    line-height: 32px;
+    height: 32px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+ul.collapsible > li > div:first-child * {
+    vertical-align: middle;
+}
+ul.collapsible > li > div:last-child {
+    padding: 0px 15px;
+/*  display: none;  */
+}
+ul.collapsible > li > div:hover + div {
+}
