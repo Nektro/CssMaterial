@@ -26,10 +26,10 @@ welcome! See this list below for the current roadmap.
 
  - [x] Both HTTP/2 optimized and minified version of output source.
  - [x] Material Icons with the `.material-icons` class courtesy of https://design.google.com/icons/
- - [x] (Extra) Css normalization via https://github.com/necolas/normalize.css (MIT)
+ - [x] [Extra] Css normalization via https://github.com/necolas/normalize.css (MIT)
  - [ ] Bottom Sheets
  - [x] Buttons
- - [x] (Extra) Button waves effect via https://github.com/fians/Waves (MIT)
+ - [x] [Extra] Button waves effect via https://github.com/fians/Waves (MIT)
  - [x] Floating Action Buttons __WIP__
  - [x] Cards
  - [ ] Chips
@@ -46,7 +46,7 @@ welcome! See this list below for the current roadmap.
  - [ ] Selection controls: Checkbox
  - [x] Selection controls: Radio button
  - [x] Selection controls: Switch
- - [x] (Extra) Side navbar (full height)
+ - [x] [Extra] Side navbar (full height)
  - [ ] Sliders
  - [ ] Snackbars
  - [ ] Toast
