@@ -55,7 +55,6 @@
                 var el = e.target.parentElement;
                 var open = el.getAttribute('aria-expanded') === "true";
                 el.setAttribute('aria-expanded', open ? "false" : "true");
-                console.log(el);
             });
         });
     }
