@@ -10,7 +10,9 @@
 @import "src/components/textfield.css";
 @import "src/components/form-radio.css";
 @import "src/components/form-switch.css";
+@import "src/components/form-checkbox.css";
 @import "src/components/stepper.css";
+@import "src/components/menu.css";
 @import url('src/extras/sidenav.css');
 @import url('src/extras/footer.css');
 @import url('src/color.css');

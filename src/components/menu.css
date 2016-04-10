@@ -1,0 +1,26 @@
+header.header .menu {
+}
+header.header .menu > a {
+    cursor: pointer;
+}
+header.header .menu > ul {
+    display: none;
+    list-style-type: none;
+}
+header.header .menu > ul li {
+    cursor: pointer;
+}
+header.header .menu[aria-expanded=true] > ul {
+    display: block;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    position: absolute;
+    z-index: 11;
+    background-color: #fff;
+}
+header.header .menu[aria-expanded=true] > ul li a {
+    padding: 0px 20px;
+}
+header.header .menu[aria-expanded=true] > ul li:hover {
+    background-color: #efefef;
+}

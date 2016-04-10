@@ -1,4 +1,16 @@
 (function() {
+    function addScript(url) {
+        var script = document.createElement('script');
+        script.setAttribute('src',url);
+        document.head.appendChild(script);
+    }
+    addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js');
+    // add each to array
+    HTMLCollection.prototype.each = function(f) {
+        for (var i = 0; i < this.length; i++) {
+            f(i, this[i]);
+        }
+    }
     // add overlay div
     document.body.innerHTML += "<div id='overlay'></div>";
     // slide out navbar
@@ -38,8 +50,17 @@
                 }
             }
         });
+        document.getElementsByClassName("menu").each(function(i, v) {
+            v.addEventListener("click", function(e) {
+                var el = e.target.parentElement;
+                var open = el.getAttribute('aria-expanded') === "true";
+                el.setAttribute('aria-expanded', open ? "false" : "true");
+                console.log(el);
+            });
+        });
     }
     // button waves effect
     Waves.attach('.btn');
+    Waves.attach('.menu a');
     Waves.init();
 })();

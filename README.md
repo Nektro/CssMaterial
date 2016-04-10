@@ -40,7 +40,7 @@ welcome! See this list below for the current roadmap.
  - [x] Header for main navigation
  - [ ] Lists
  - [ ] Lists w/ Controls
- - [ ] Menus (dropdown)
+ - [x] Menus (dropdown)
  - [ ] Pickers
  - [ ] Progress bar
  - [ ] Selection controls: Checkbox
