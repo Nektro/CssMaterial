@@ -55,6 +55,12 @@ nav#side-nav > ul li a span.material-icons {
     position: relative;
     top: -1px;
 }
+nav#side-nav > ul li a span.fa {
+    padding-right: 32px;
+    position: relative;
+    top: -1px;
+    font-size: 20px;
+}
 nav#side-nav > ul li ul {
     display: none;
     padding-top: 15px;
