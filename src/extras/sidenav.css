@@ -50,16 +50,18 @@ nav#side-nav > ul li a span {
     vertical-align: middle;
     line-height: 24px;
 }
-nav#side-nav > ul li a span.material-icons {
+nav#side-nav > ul li a span.material-icons,
+nav#side-nav > ul li a span.fa,
+nav#side-nav > ul li a span.devicons {
     padding-right: 32px;
     position: relative;
     top: -1px;
 }
 nav#side-nav > ul li a span.fa {
-    padding-right: 32px;
-    position: relative;
-    top: -1px;
     font-size: 20px;
+}
+nav#side-nav > ul li a span.devicons {
+    font-size: 24px;
 }
 nav#side-nav > ul li ul {
     display: none;
