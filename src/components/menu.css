@@ -10,13 +10,17 @@ header.header .menu > ul {
 header.header .menu > ul li {
     cursor: pointer;
 }
+header.header .menu[aria-expanded=true] > a {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
 header.header .menu[aria-expanded=true] > ul {
     display: block;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     padding: 0px;
     position: absolute;
     z-index: 11;
     background-color: #fff;
+    transform: translateY(-1px);
 }
 header.header .menu[aria-expanded=true] > ul li a {
     padding: 0px 20px;
