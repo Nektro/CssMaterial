@@ -21,7 +21,7 @@ $ bower install Nektro/CssMaterial
 For examples on how to use the different components, see the [example page](examples/example.html).
 
 ## Contributing
-Any help would be graciously. Layout errors in the CSS or pull requests for new components are always
+Any help would be graciously appreciated. Layout errors in the CSS or pull requests for new components are always
 welcome! See this list below for the current roadmap.
 
  - [x] Both HTTP/2 optimized and minified version of output source.
@@ -50,7 +50,7 @@ welcome! See this list below for the current roadmap.
  - [ ] Sliders
  - [ ] Snackbars
  - [ ] Toast
- - [ ] Subheadings
+ - [x] Subheadings
  - [x] Steppers
  - [ ] Tabs
  - [x] Text fields __Done, needs work__
@@ -67,4 +67,4 @@ CssMaterial is licensed under the MIT license. See [LICENSE](LICENSE).
 
 ## Contact
 Feel free to follow me on Twitter [@Nektro](https://twitter.com/Nektro), email me hello@nektro.net, or visit my website
-that used this very library https://dev.nektro.net
+that uses this very library https://dev.nektro.net
