@@ -1,0 +1,13 @@
+ul.list {
+    list-style-type: none;
+}
+ul.list li {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+ul.list li:not(:last-child) {
+    border-bottom: 0px solid black;
+}
+ul.list li p {
+    margin: 0px;
+}
