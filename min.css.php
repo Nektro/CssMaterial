@@ -27,6 +27,8 @@ echo minifiyCss(fileGetAll(array(
     'src/components/form-checkbox.css',
     'src/components/stepper.css',
     'src/components/menu.css',
+    'src/components/tabs.css',
+    'src/components/list.css',
     'src/extras/sidenav.css',
     'src/extras/footer.css',
     'src/color.css',
