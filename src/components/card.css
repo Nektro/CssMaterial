@@ -18,6 +18,7 @@ div.card > div.cardcontent {
 }
 div.card > div.cardaction {
     padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 div.card > div.cardaction > a.btn {
     background-color: inherit;
