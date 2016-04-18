@@ -15,6 +15,7 @@
 @import "src/components/menu.css";
 @import "src/components/tabs.css";
 @import "src/components/list.css";
+@import "src/components/form-select.css";
 @import url('src/extras/sidenav.css');
 @import url('src/extras/footer.css');
 @import url('src/color.css');
