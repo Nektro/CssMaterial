@@ -1,10 +1,16 @@
 (function() {
-    function addScript(url) {
+    function addScript(url,on) {
         var script = document.createElement('script');
         script.setAttribute('src',url);
+        script.addEventListener('load', function(e) { on(); });
         document.head.appendChild(script);
     }
-    addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js');
+    // button waves effect
+    addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
+        Waves.attach('.btn');
+        Waves.attach('.menu a');
+        Waves.init();
+    });
     // add each to array
     HTMLCollection.prototype.each = function(f) {
         for (var i = 0; i < this.length; i++) {
@@ -58,8 +64,15 @@
             });
         });
     }
-    // button waves effect
-    Waves.attach('.btn');
-    Waves.attach('.menu a');
-    Waves.init();
+    // autosize textarea
+    // courtesy http://codepen.io/vsync/pen/czgrf (MIT)
+    var textarea = document.querySelector('textarea');
+    textarea.addEventListener('keydown', autosize);
+    function autosize(e){
+        var el = this;
+        setTimeout(function(){
+            el.style.cssText = 'height:auto; padding:0';
+            el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        },0);
+    }
 })();
