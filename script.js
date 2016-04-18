@@ -65,14 +65,15 @@
         });
     }
     // autosize textarea
-    // courtesy http://codepen.io/vsync/pen/czgrf (MIT)
-    var textarea = document.querySelector('textarea');
-    textarea.addEventListener('keydown', autosize);
-    function autosize(e){
-        var el = this;
-        setTimeout(function(){
-            el.style.cssText = 'height:auto; padding:0';
-            el.style.cssText = 'height:' + el.scrollHeight + 'px';
-        },0);
+    // inspired by http://codepen.io/vsync/pen/czgrf (MIT)
+    try {
+        document.querySelector('textarea').addEventListener('keydown', function(e) {
+            var el = this;
+            setTimeout(function(){
+                el.style.cssText = 'height:auto; padding:0';
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 0);
+        });
     }
+    catch (x) {}
 })();
