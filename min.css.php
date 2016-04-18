@@ -36,3 +36,4 @@ echo minifiyCss(fileGetAll(array(
     'src/grid.css',
     'src/general.css'
 )));
+echo "\n";
