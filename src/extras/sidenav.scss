@@ -3,6 +3,7 @@ nav#side-nav {
     min-height: 100%;
     background-color: white;
     font-size: 14px;
+    will-change: transform;
 }
 nav#side-nav.pull-out {
     position: fixed;
@@ -11,7 +12,12 @@ nav#side-nav.pull-out {
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 100;
+    will-change: transform;
+    transition: transform 0.2s linear;
     transform: translateX(-100%);
+}
+nav#side-nav.pull-out[aria-expanded=true] {
+    transform: translateX(0px);
 }
 nav#side-nav > .logo {
     height: 40px;
