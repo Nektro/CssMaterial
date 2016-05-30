@@ -11,6 +11,11 @@ header.header nav .title {
 header.header nav .title a {
     text-decoration: none;
     color: inherit;
+    line-height: 64px;
+}
+header.header nav .title a span {
+    line-height: 64px;
+    vertical-align: middle;
 }
 header.header nav .title a img {
     vertical-align: middle;
