@@ -9,6 +9,7 @@
     addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
         Waves.attach('.btn');
         Waves.attach('.menu a');
+        Waves.attach('.sidenavcontrol');
         Waves.init();
     });
     // add each to array
