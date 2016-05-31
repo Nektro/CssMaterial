@@ -91,17 +91,3 @@ header.header > nav > .sidenavcontrol {
     vertical-align: middle;
     cursor: pointer;
 }
-/* move title over if fixed, oops can't */
-/* sticky  WIP: inline main after nav doesn't move up */
-nav#side-nav.sticky {
-    position: relative;
-    top: 1px;
-    display: inline;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
-}
-nav#side-nav.sticky > .logo {
-    display: none;
-}
-nav#side-nav.sticky > ul {
-    padding-top: 15px;
-}
