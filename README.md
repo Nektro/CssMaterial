@@ -7,14 +7,10 @@ all while using as little Javascript as possible in a library format so only the
 This is a WIP project so all features outlined in the spec may not be available.
 
 ## Usage
-To start using CssMaterial today, you can link to the css directly or use Bower.
+To start using CssMaterial today, you import the html page in the root of this project.
 
 ```html
-<link rel="stylesheet" type="text/css" href="/path/to/import.css">
-```
-
-```bash
-$ bower install Nektro/CssMaterial
+<link rel="import" href="https://rawgit.com/Nektro/CssMaterial/master/import.html">
 ```
 
 ## Examples
