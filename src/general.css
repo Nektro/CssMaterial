@@ -1,4 +1,8 @@
 /* general styles that don't correlate with any specific component */
+:root {
+    --cm-primary-color: var(--cm-indigo);
+    --cm-accent-color: var(--cm-deep-orange);
+}
 html, body {
     height: 100%;
 }
