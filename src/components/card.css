@@ -1,8 +1,15 @@
 div.card {
     width: 100%;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
     border-radius: 2px;
     margin: 0.5rem 0 1rem 0;
+    @apply --cm-shadow-1;
+}
+div.card:hover {
+    @apply --cm-shadow-3;
+}
+div.card.nohover:hover {
+    @apply --cm-shadow-1;
 }
 div.card > div.cardmedia {
     max-height: 400px;
@@ -22,6 +29,6 @@ div.card > div.cardaction {
 }
 div.card > div.cardaction > a.btn {
     background-color: inherit;
-    color: #2196f3;
+    color: var(--cm-blue);
     box-shadow: none;
 }
