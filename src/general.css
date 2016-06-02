@@ -28,9 +28,6 @@ a {
 .right {
     float: right;
 }
-nav#side-nav.fixed + main {
-    margin-left: 240px;
-}
 .container {
     width: 70%;
     margin: auto;
