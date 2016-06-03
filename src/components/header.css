@@ -1,20 +1,22 @@
 header.header nav {
-    height: 64px;
+    --cm-header-height: 64px;
+
+    height: var(--cm-header-height);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 header.header nav .title {
     font-size: 18px;
-    line-height: 64px;
+    line-height: var(--cm-header-height);
     margin-left: 15px;
     display: inline-block;
 }
 header.header nav .title a {
     text-decoration: none;
     color: inherit;
-    line-height: 64px;
+    line-height: var(--cm-header-height);
 }
 header.header nav .title a span {
-    line-height: 64px;
+    line-height: var(--cm-header-height);
     vertical-align: middle;
 }
 header.header nav .title a img {
@@ -30,15 +32,12 @@ header.header nav > ul {
 }
 header.header nav > ul > li {
     padding: 0px 10px;
-    line-height: 64px;
+    line-height: var(--cm-header-height);
     display: inline-block;
     vertical-align: top;
 }
 header.header nav > ul > li * {
     vertical-align: middle;
-}
-header.header.thin nav > ul > li {
-    line-height: 32px;
 }
 header.header nav > ul.right {
     float: right;
@@ -48,11 +47,16 @@ header.header .container {
     padding: 0px;
 }
 header.header.thin nav {
-    height: 32px;
+    --cm-header-height: 32px;
+
+    height: var(--cm-header-height);
 }
 header.header.thin nav .title {
-    line-height: 32px;
+    line-height: var(--cm-header-height);
     font-size: 16px;
+}
+header.header.thin nav > ul > li {
+    line-height: var(--cm-header-height);
 }
 header.header.sticky {
     position: fixed;
@@ -60,8 +64,8 @@ header.header.sticky {
     width: 100%;
     z-index: 10;
     background-color: inherit;
-    margin-bottom: 64px;
+    margin-bottom: var(--cm-header-height);
 }
 header.header.sticky ~ main {
-    margin-top: 64px;
+    margin-top: var(--cm-header-height);
 }
