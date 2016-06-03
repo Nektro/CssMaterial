@@ -1,12 +1,12 @@
-form.form fieldset.stepper {
+.form fieldset.stepper {
     border: 0px;
     border-left: 2px solid #ddd;
     margin: 0px 10px
 }
-form.form fieldset.stepper > legend {
+.form fieldset.stepper > legend {
     font-weight: 500;
 }
-form.form fieldset.stepper > legend > div.step {
+.form fieldset.stepper > legend > div.step {
     width: 30px;
     height: 30px;
     border-radius: 50%;
