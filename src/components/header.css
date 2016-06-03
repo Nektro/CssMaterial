@@ -48,8 +48,6 @@ header.header .container {
 }
 header.header.thin nav {
     --cm-header-height: 32px;
-
-    height: var(--cm-header-height);
 }
 header.header.thin nav .title {
     line-height: var(--cm-header-height);
