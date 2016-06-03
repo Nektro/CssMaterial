@@ -1,4 +1,4 @@
-div.form-input > select ~ label {
+.form div.form-input select + label {
     font-size: 14px;
     top: -20px;
 }
