@@ -10,15 +10,15 @@
 @import 'src/components/button.css';
 @import 'src/components/datatable.css';
 @import 'src/components/card.css';
-@import 'src/components/textfield.css';
+@import 'src/components/form-text.css';
 @import 'src/components/form-radio.css';
 @import 'src/components/form-switch.css';
 @import 'src/components/form-checkbox.css';
+@import 'src/components/form-select.css';
 @import 'src/components/stepper.css';
 @import 'src/components/menu.css';
 @import 'src/components/tabs.css';
 @import 'src/components/list.css';
-@import 'src/components/form-select.css';
 @import 'src/extras/sidenav.css';
 @import 'src/extras/footer.css';
 @import 'src/grid.css';
