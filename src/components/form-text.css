@@ -1,24 +1,24 @@
-.form div.form-input {
+.form .form-input {
     height: 60px;
     margin: 12px 0px;
     position: relative;
 }
-.form div.form-input > input {
+.form .form-input > input {
     margin-bottom: 16px;
     width: 100%;
     font-size: 18px;
 }
-.form div.form-input > input {
+.form .form-input > input {
     border: none;
     border-bottom: 2px solid #aaa;
     transition: 0.2s ease all;
     outline: none;
 }
-.form div.form-input > input:focus,
-.form div.form-input > input:valid {
+.form .form-input > input:focus,
+.form .form-input > input:valid {
     border-bottom: 2px solid #3f51b5;
 }
-.form div.form-input > label {
+.form .form-input > label {
     font-size: 18px;
     position: absolute;
     pointer-events: none;
@@ -26,24 +26,24 @@
     top: 0px;
     transition: 0.2s ease all;
 }
-.form div.form-input > input:focus ~ label,
-.form div.form-input > input:valid ~ label,
-.form div.form-input > textarea:focus ~ label,
-.form div.form-input > textarea:valid ~ label {
+.form .form-input > input:focus ~ label,
+.form .form-input > input:valid ~ label,
+.form .form-input > textarea:focus ~ label,
+.form .form-input > textarea:valid ~ label {
     font-size: 14px;
     top: -20px;
     color: #3f51b5;
 }
-.form div.form-input > input[type=date] ~ label,
-.form div.form-input > input[disabled] ~ label,
-.form div.form-input > input[type=file] ~ label {
+.form .form-input > input[type=date] ~ label,
+.form .form-input > input[disabled] ~ label,
+.form .form-input > input[type=file] ~ label {
     font-size: 14px;
     top: -20px;
 }
-.form div.form-input > textarea ~ label {
+.form .form-input > textarea ~ label {
     color: rgba(0,0,0,0.38);
 }
-.form div.form-input > textarea {
+.form .form-input > textarea {
     width: 100%;
     outline: none;
     border: none;
@@ -51,9 +51,9 @@
     resize: none;
     overflow: hidden;
 }
-.form div.form-input:last-of-type {
+.form .form-input:last-of-type {
     height: 20px;
 }
-.form div.form-input.textarea {
+.form .form-input.textarea {
     height: inherit;
 }
