@@ -1,2 +1,29 @@
-div.form-input.checkbox > input[type="checkbox"] {
+.form .form-input input[type=checkbox] {
+    opacity: 0;
+}
+.form .form-input input[type=checkbox] + label {
+    padding-left: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.form .form-input input[type=checkbox] + label::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #5a5a5a;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+.form .form-input input[type=checkbox]:checked + label::before {
+    content: '';
+    height: 9px;
+    border: 2px solid #26a69a;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transform: rotate(-45deg);
 }

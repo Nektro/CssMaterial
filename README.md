@@ -39,7 +39,7 @@ welcome! See this list below for the current roadmap.
  - [x] Menus (dropdown)
  - [ ] Pickers
  - [ ] Progress bar
- - [ ] Selection controls: Checkbox
+ - [x] Selection controls: Checkbox
  - [x] Selection controls: Radio button
  - [x] Selection controls: Switch
  - [x] [Extra] Side navbar (full height)
