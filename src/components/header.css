@@ -57,6 +57,10 @@ header.header.thin nav .title {
 header.header.thin nav > ul > li {
     line-height: var(--cm-header-height);
 }
+header.header.thin nav .title a img {
+    height: 24px;
+    margin-right: 5px;
+}
 header.header.sticky {
     position: fixed;
     top: 0px;
