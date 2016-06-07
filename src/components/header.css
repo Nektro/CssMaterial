@@ -1,6 +1,7 @@
-header.header nav {
+body {
     --cm-header-height: 64px;
-
+}
+header.header nav {
     height: var(--cm-header-height);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -46,7 +47,7 @@ header.header nav > ul.right {
 header.header .container {
     padding: 0px;
 }
-header.header.thin nav {
+header.header.thin {
     --cm-header-height: 32px;
 }
 header.header.thin nav .title {
@@ -64,6 +65,6 @@ header.header.sticky {
     background-color: inherit;
     margin-bottom: var(--cm-header-height);
 }
-header.header.sticky ~ main {
+header.header.sticky + main {
     margin-top: var(--cm-header-height);
 }
