@@ -69,6 +69,6 @@ header.header.sticky {
     background-color: inherit;
     margin-bottom: var(--cm-header-height);
 }
-header.header.sticky + main {
+header.header.sticky ~ main {
     margin-top: var(--cm-header-height);
 }
