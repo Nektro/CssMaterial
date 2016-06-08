@@ -1,4 +1,8 @@
 /* general styles that don't correlate with any specific component */
+:root {
+    --cm-primary-color: var(--cm-indigo);
+    --cm-accent-color: var(--cm-deep-orange);
+}
 html, body {
     height: 100%;
 }
@@ -24,14 +28,10 @@ a {
 .right {
     float: right;
 }
-nav#side-nav.fixed + main {
-    margin-left: 240px;
-}
 .container {
     width: 70%;
     margin: auto;
     padding: 15px;
-    min-width: 960px;
     max-width: 1280px;
 }
 @media (max-width: 960px) {

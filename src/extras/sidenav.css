@@ -1,5 +1,11 @@
+:root {
+    --cm-pullout-transition: {
+        transition: transform 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+    };
+    --cm-sidenav-width: 240px;
+}
 nav#side-nav {
-    width: 240px;
+    width: var(--cm-sidenav-width);
     min-height: 100%;
     background-color: white;
     font-size: 14px;
@@ -12,9 +18,8 @@ nav#side-nav.pull-out {
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 100;
-    will-change: transform;
-    transition: transform 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
     transform: translateX(-100%);
+    @apply --cm-pullout-transition;
 }
 nav#side-nav.pull-out[aria-expanded=true] {
     transform: translateX(0px);
@@ -37,13 +42,13 @@ nav#side-nav > ul > li {
     padding: 15px 0px 15px 0px;
     cursor: pointer;
     font-weight: 500;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--cm-grey-lighten-2);
 }
 nav#side-nav > ul > li:last-child {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--cm-grey-lighten-2);
 }
 nav#side-nav > ul li:hover {
-    background-color: #eee;
+    background-color: var(--cm-grey-lighten-3);
 }
 nav#side-nav > ul li a {
     padding: 15px 0px 15px 16px;
@@ -73,7 +78,7 @@ nav#side-nav > ul li ul li {
 }
 nav#side-nav > .legal {
     padding: 12px 0px 12px 24px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--cm-grey-lighten-2);
     bottom: 0px;
     position: absolute;
     width: 100%;
@@ -83,11 +88,27 @@ nav#side-nav > .legal div {
 }
 nav#side-nav > .legal a {
     text-decoration: none;
-    color: #0277bb;
+    color: var(--cm-light-blue-darken-3);
 }
 header.header > nav > .sidenavcontrol {
     display: inline-block;
     padding: 0px 0px 0px 15px;
     vertical-align: middle;
     cursor: pointer;
+}
+
+@media screen and (min-width:960px) {
+    nav#side-nav.pull-out {
+        transform: translateX(0px);
+    }
+    header.header {
+        transform: translateX(var(--cm-sidenav-width));
+        width: calc(100% - var(--cm-sidenav-width));
+        @apply --cm-pullout-transition;
+    }
+    main {
+        transform: translateX(var(--cm-sidenav-width));
+        width: calc(100% - var(--cm-sidenav-width));
+        @apply --cm-pullout-transition;
+    }
 }

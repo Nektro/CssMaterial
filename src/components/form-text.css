@@ -1,0 +1,60 @@
+.form .form-input {
+    height: 60px;
+    margin: 12px 0px;
+    position: relative;
+}
+
+.form .form-input > input:not([type=checkbox]) {
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 18px;
+}
+.form .form-input > input:not([type=checkbox]) {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    transition: 0.2s ease all;
+    outline: none;
+}
+.form .form-input > input:focus:not([type=checkbox]),
+.form .form-input > input:valid:not([type=checkbox]) {
+    border-bottom: 2px solid #3f51b5;
+}
+.form .form-input > input:not([type=checkbox]) + label {
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 0px;
+    transition: 0.2s ease all;
+}
+.form .form-input > input:focus:not([type=checkbox]) + label,
+.form .form-input > input:valid:not([type=checkbox]) + label,
+.form .form-input > textarea:focus:not([type=checkbox]) + label,
+.form .form-input > textarea:valid:not([type=checkbox]) + label {
+    font-size: 14px;
+    top: -20px;
+    color: #3f51b5;
+}
+.form .form-input > input[type=date] + label,
+.form .form-input > input[disabled]:not([type=checkbox]) + label,
+.form .form-input > input[type=file] + label {
+    font-size: 14px;
+    top: -20px;
+}
+.form .form-input > textarea + label {
+    color: rgba(0,0,0,0.38);
+}
+.form .form-input > textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    resize: none;
+    overflow: hidden;
+}
+.form .form-input:last-of-type {
+    height: 20px;
+}
+.form .form-input.textarea {
+    height: inherit;
+}
