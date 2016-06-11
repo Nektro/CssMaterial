@@ -92,7 +92,7 @@ ul.inline-list li {
 
 /* add alerts, inspired by bootstrap. essentially a one line card*/
 .alert {
-    padding: 15px;
+    padding: 0px 15px;
     margin-bottom: 20px;
     border-radius: 4px;
     border: 1px solid #ddd;
