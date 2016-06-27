@@ -101,11 +101,11 @@ header.header > nav > .sidenavcontrol {
     header.header {
         transform: translateX(var(--cm-sidenav-width));
         width: calc(100% - var(--cm-sidenav-width));
-        @apply --cm-pullout-transition;
+        transition: transform 0.3s cubic-bezier(0,0,0.32,1);
     }
     main {
         transform: translateX(var(--cm-sidenav-width));
         width: calc(100% - var(--cm-sidenav-width));
-        @apply --cm-pullout-transition;
+        transition: transform 0.3s cubic-bezier(0,0,0.32,1);
     }
 }
