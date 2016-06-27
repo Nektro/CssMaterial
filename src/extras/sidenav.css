@@ -21,6 +21,10 @@ nav#side-nav.pull-out {
 nav#side-nav.pull-out[aria-expanded=true] {
     transform: translateX(0px);
 }
+nav#side-nav.pull-out[aria-expanded=true] ~ #overlay {
+    z-index: 10;
+    opacity: 0.7;
+}
 nav#side-nav > .logo {
     height: 40px;
     padding: 12px 0px 12px 24px;
