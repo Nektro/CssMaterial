@@ -10,7 +10,8 @@ This is a WIP project so all features outlined in the spec may not be available.
 To start using CssMaterial today, you import the html page in the root of this project.
 
 ```html
-<link rel="import" href="https://rawgit.com/Nektro/CssMaterial/master/import.html">
+<link rel="import" href="https://rawgit.com/Nektro/CssMaterial/master/cssmaterial.css">
+<script src="https://rawgit.com/Nektro/CssMaterial/master/cssmaterial.js"></script>
 ```
 
 ## Examples
