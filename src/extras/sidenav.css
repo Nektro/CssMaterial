@@ -109,7 +109,7 @@ header.header > nav > .sidenavcontrol {
     }
     main {
         transform: translateX(var(--cm-sidenav-width));
-        width: calc(100% - var(--cm-sidenav-width));
+        width: calc(100% - var(--cm-sidenav-width) - 40px);
         transition: transform 0.3s cubic-bezier(0,0,0.32,1);
     }
 }
