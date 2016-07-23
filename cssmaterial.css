@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500');
 @import url('https://rawgit.com/fians/Waves/master/dist/waves.css');
 
-@import 'src/color.css';
-@import 'src/elevation.css';
-
 @import 'src/components/header.css';
 @import 'src/components/fab.css';
 @import 'src/components/button.css';
@@ -23,3 +20,5 @@
 @import 'src/extras/footer.css';
 @import 'src/grid.css';
 @import 'src/general.css';
+@import 'src/color.css';
+@import 'src/elevation.css';
