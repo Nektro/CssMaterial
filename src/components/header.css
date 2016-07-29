@@ -64,7 +64,6 @@ header.header.thin nav .title a img {
 header.header.sticky {
     position: fixed;
     top: 0px;
-    width: 100%;
     z-index: 10;
     background-color: inherit;
     margin-bottom: var(--cm-header-height);
