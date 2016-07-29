@@ -9,7 +9,7 @@
     addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
         Waves.attach('.btn');
         Waves.attach('.menu a');
-        Waves.attach('.sidenavcontrol');
+        Waves.attach('.sidenavcontrol > span');
         Waves.init();
     });
     // add each to array
@@ -25,7 +25,7 @@
     // if class is pull-out, add animation
     if (a.className === "pull-out") {
         document.getElementsByClassName("sidenavcontrol")[0].addEventListener('click', function(e) {
-            a.setAttribute('aria-expanded', 'true');
+            a.setAttribute('aria-expanded', !(a.getAttribute('aria-expanded')===('true')));
         });
         document.getElementsByTagName("body")[0].addEventListener('click', function(e) {
             if (e.path.indexOf(document.getElementsByClassName("sidenavcontrol")[0]) === -1) {
