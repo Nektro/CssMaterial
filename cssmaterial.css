@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500');
 @import url('https://rawgit.com/fians/Waves/master/dist/waves.css');
 
-@import 'src/components/header.css';
+@import 'src/components/toolbar.css';
 @import 'src/components/fab.css';
 @import 'src/components/button.css';
 @import 'src/components/datatable.css';
