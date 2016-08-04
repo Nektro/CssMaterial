@@ -36,18 +36,19 @@
                 }
             }
         });
-        document.getElementsByClassName("menu").each(function(i, v) {
-            v.addEventListener("click", function(e) {
-                var el = e.target.parentElement;
-                var open = el.getAttribute('aria-expanded') === "true";
-                el.setAttribute('aria-expanded', open ? "false" : "true");
-            });
-        });
     }
     // if a is null, set size to 0
     if (a.children.length === 0) {
         document.body.parentElement.style.setProperty('--cm-sidenav-width', '0px');
     }
+    // dropdown menu (material toolbar)
+    document.getElementsByClassName("menu").each(function(i, v) {
+        v.addEventListener("click", function(e) {
+            var el = e.target.parentElement;
+            var open = el.getAttribute('aria-expanded') === "true";
+            el.setAttribute('aria-expanded', open ? "false" : "true");
+        });
+    });
     // autosize textarea
     // inspired by http://codepen.io/vsync/pen/czgrf (MIT)
     try {
