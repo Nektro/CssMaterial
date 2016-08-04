@@ -1,25 +1,16 @@
-(function() {
-    function addScript(url,on) {
-        var script = document.createElement('script');
-        script.setAttribute('src',url);
-        script.addEventListener('load', function(e) { on(); });
-        document.head.appendChild(script);
+function addScript(url,on) {
+    var script = document.createElement('script');
+    script.setAttribute('src',url);
+    script.addEventListener('load', function(e) { on(); });
+    document.head.appendChild(script);
+}
+// add each to array
+HTMLCollection.prototype.each = function(f) {
+    for (var i = 0; i < this.length; i++) {
+        f(i, this[i]);
     }
-    // button waves effect
-    addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
-        Waves.attach('.btn');
-        Waves.attach('.menu a');
-        Waves.attach('.sidenavcontrol > span');
-        Waves.init();
-    });
-    // add each to array
-    HTMLCollection.prototype.each = function(f) {
-        for (var i = 0; i < this.length; i++) {
-            f(i, this[i]);
-        }
-    }
-    // add overlay div
-    document.body.innerHTML += "<div id='overlay'></div>";
+}
+function reloadCssM() {
     // slide out navbar
     var a = document.getElementById("side-nav") || document.createElement('div');
     // if class is pull-out, add animation
@@ -61,4 +52,16 @@
         });
     }
     catch (x) {}
+}
+(function() {
+    reloadCssM();
+    // button waves effect
+    addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
+        Waves.attach('.btn');
+        Waves.attach('.menu a');
+        Waves.attach('.sidenavcontrol > span');
+        Waves.init();
+    });
+    // add overlay div
+    document.body.innerHTML += "<div id='overlay'></div>";
 })();
