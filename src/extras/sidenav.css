@@ -52,11 +52,12 @@ nav#side-nav > ul li:hover {
     background-color: var(--cm-grey-lighten-3);
 }
 nav#side-nav > ul li a {
-    padding: 15px 0px 15px 16px;
-    user-select: none;
-    width: 240px;
+    display: table;
+    width: 235px;
+    padding: 5px 15px;
     text-decoration: none;
     color: black;
+    user-select: none;
 }
 nav#side-nav > ul li a span {
     vertical-align: middle;

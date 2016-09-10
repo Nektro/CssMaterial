@@ -1,6 +1,9 @@
 body {
     --cm-header-height: 64px;
 }
+header.header * {
+    user-select: none;
+}
 header.header nav {
     height: var(--cm-header-height);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -22,7 +25,7 @@ header.header nav .title a span {
 }
 header.header nav .title a img {
     vertical-align: middle;
-    height: 48px;
+    height: calc(var(--cm-header-height) * 0.8);
 }
 header.header nav > ul {
     list-style-type: none;
