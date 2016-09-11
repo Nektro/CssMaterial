@@ -1,5 +1,12 @@
-.row { width: 100%; }
-.row .col { display: inline-block; vertical-align: top; }
+.row {
+    width: 100%;
+    transition: width 0.3s cubic-bezier(0,0,0.32,1);
+}
+.row .col {
+    display: inline-block;
+    vertical-align: top;
+    transition: width 0.3s cubic-bezier(0,0,0.32,1);
+}
 
 @media (min-width: 0px) {
     .row .col.xs0  { display: none; }
