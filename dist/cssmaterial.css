@@ -1,12 +1,14 @@
-@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500");
 @import url("https://rawgit.com/fians/Waves/master/dist/waves.css");
+/*@import url('https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.3.0/balloon.min.css');*/
 body { --cm-header-height: 64px; }
+header.header * { user-select: none; }
 header.header nav { height: var(--cm-header-height); box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
 header.header nav .title { font-size: 18px; line-height: var(--cm-header-height); margin-left: 15px; display: inline-block; }
 header.header nav .title a { text-decoration: none; color: inherit; line-height: var(--cm-header-height); }
 header.header nav .title a span { line-height: var(--cm-header-height); vertical-align: middle; }
-header.header nav .title a img { vertical-align: middle; height: 48px; }
+header.header nav .title a img { vertical-align: middle; height: calc(var(--cm-header-height) * 0.8); }
 header.header nav > ul { list-style-type: none; display: inline-block; vertical-align: top; margin: 0px; padding: 0px; }
 header.header nav > ul > li { padding: 0px 10px; line-height: var(--cm-header-height); display: inline-block; vertical-align: top; }
 header.header nav > ul > li * { vertical-align: middle; }
@@ -34,8 +36,8 @@ div.card:hover { @apply --cm-shadow-3; }
 div.card.nohover:hover { @apply --cm-shadow-1; }
 div.card > div.cardmedia { max-height: 400px; overflow: hidden; }
 div.card > div.cardmedia > img { width: 100%; }
-div.card > div.cardcontent { padding: 16px; padding-top: 24px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-div.card > div.cardaction { padding: 16px; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+div.card > div.cardcontent { padding: 16px; padding-top: 24px; border: 1px solid rgba(0, 0, 0, 0.2); }
+div.card > div.cardaction { padding: 16px; border: 1px solid rgba(0, 0, 0, 0.2); }
 div.card > div.cardaction > a.btn { background-color: inherit; color: var(--cm-blue); box-shadow: none; }
 .form .form-input { height: 60px; margin: 12px 0px; position: relative; }
 .form .form-input > input:not([type=checkbox]) { margin-bottom: 16px; width: 100%; font-size: 18px; }
@@ -71,14 +73,15 @@ div.form-input.switch > input[type="checkbox"]:checked + label::after { backgrou
 .form fieldset.stepper { border: 0px; border-left: 2px solid #ddd; margin: 0px 10px; padding: 20px; }
 .form fieldset.stepper > legend { font-weight: 500; }
 .form fieldset.stepper > legend > div.step { width: 30px; height: 30px; border-radius: 50%; background-color: blue; display: inline-block; vertical-align: middle; position: relative; left: -26px; color: white; text-align: center; line-height: 30px; font-weight: normal; }
-header.header .menu > a { cursor: pointer; }
-header.header .menu > ul { display: none; list-style-type: none; }
-header.header .menu > ul li { cursor: pointer; }
-header.header .menu[aria-expanded=true] > a { box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
-header.header .menu[aria-expanded=true] > ul { display: block; box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); padding: 0px; position: absolute; z-index: 11; background-color: #fff; transform: translateY(-1px); }
-header.header .menu[aria-expanded=true] > ul li a { padding: 0px 20px; }
-header.header .menu[aria-expanded=true] > ul li:hover { background-color: #efefef; }
-ul.list { list-style-type: none; }
+header.header .menu { cursor: pointer; }
+header.header .menu > ul { list-style-type: none; position: absolute; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); padding: 0px; visibility: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.32, 1), opacity 0.3s cubic-bezier(0, 0, 0.32, 1); opacity: 0; transform: translateY(calc(-0.25 * var(--cm-header-height))); }
+header.header .menu > ul li { line-height: initial; }
+header.header .menu > ul > li:first-child { margin-top: 10px; }
+header.header .menu > ul > li:last-child { margin-bottom: 10px; }
+header.header .menu > ul li a { padding: 0px 20px; line-height: 50px; }
+header.header .menu[aria-expanded=true] > ul { z-index: 11; background-color: #fff; visibility: visible; opacity: 1; transform: translateY(-2px); }
+header.header .menu[aria-expanded=true] > ul li:hover { background-color: #ddd; }
+ul.list { list-style-type: none; padding-left: 0px; }
 ul.list li { border: 1px solid #ddd; padding: 20px; }
 ul.list li:not(:last-child) { border-bottom: 0px solid black; }
 ul.list li p { margin: 0px; }
@@ -94,7 +97,7 @@ nav#side-nav ul { list-style-type: none; padding: 0px; margin-top: 0px; }
 nav#side-nav > ul > li { padding: 15px 0px 15px 0px; cursor: pointer; font-weight: 500; border-top: 1px solid var(--cm-grey-lighten-2); }
 nav#side-nav > ul > li:last-child { border-bottom: 1px solid var(--cm-grey-lighten-2); }
 nav#side-nav > ul li:hover { background-color: var(--cm-grey-lighten-3); }
-nav#side-nav > ul li a { padding: 15px 0px 15px 16px; user-select: none; width: 240px; text-decoration: none; color: black; }
+nav#side-nav > ul li a { display: table; width: 235px; padding: 5px 15px; text-decoration: none; color: black; user-select: none; }
 nav#side-nav > ul li a span { vertical-align: middle; line-height: 24px; }
 nav#side-nav > ul li a span.material-icons, nav#side-nav > ul li a span.fa, nav#side-nav > ul li a span.devicons { padding-right: 32px; position: relative; top: -1px; }
 nav#side-nav > ul li ul { display: none; padding-top: 15px; }
