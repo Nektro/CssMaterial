@@ -72,7 +72,7 @@ div.form-input.switch > input[type="checkbox"]:checked + label::after { backgrou
 .form div.form-input select + label { font-size: 14px; top: -20px; }
 .form fieldset.stepper { border: 0px; border-left: 2px solid #ddd; margin: 0px 10px; padding: 20px; }
 .form fieldset.stepper > legend { font-weight: 500; }
-.form fieldset.stepper > legend > div.step { width: 30px; height: 30px; border-radius: 50%; background-color: blue; display: inline-block; vertical-align: middle; position: relative; left: -26px; color: white; text-align: center; line-height: 30px; font-weight: normal; }
+.form fieldset.stepper > legend > div.step { width: 30px; height: 30px; border-radius: 50%; background-color: blue; display: inline-block; vertical-align: middle; position: relative; left: -36px; color: white; text-align: center; line-height: 30px; font-weight: normal; }
 header.header .menu { cursor: pointer; }
 header.header .menu > ul { list-style-type: none; position: absolute; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); padding: 0px; visibility: hidden; transition: transform 0.3s cubic-bezier(0, 0, 0.32, 1), opacity 0.3s cubic-bezier(0, 0, 0.32, 1); opacity: 0; transform: translateY(calc(-0.25 * var(--cm-header-height))); }
 header.header .menu > ul li { line-height: initial; }
