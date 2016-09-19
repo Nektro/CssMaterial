@@ -1,0 +1,27 @@
+{
+  "name": "cssmaterial",
+  "version": "1.0.0",
+  "description": "[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)",
+  "main": "cssmaterial.css",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nektro/CssMaterial.git"
+  },
+  "author": "Nektro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nektro/CssMaterial/issues"
+  },
+  "homepage": "https://github.com/Nektro/CssMaterial#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-remove-empty-lines": "0.0.8",
+    "gulp-sass": "^2.3.2",
+  }
+}

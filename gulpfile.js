@@ -1,11 +1,13 @@
 var
 gulp = require('gulp'),
-minifyCss = require('gulp-clean-css'),
-concat = require('gulp-concat');
+sass = require('gulp-sass'),
+cssimport = require('gulp-cssimport'),
+removeEmptyLines = require('gulp-remove-empty-lines');
 
 gulp.task('default', function() {
-    gulp.src('src/*/*.css')
-    .pipe(minifyCss())
-    .pipe(concat("cssmaterial.min.css"))
-    .pipe(gulp.dest(''));
+    gulp.src('cssmaterial.css')
+    .pipe(cssimport({filter: /^src\//gi}))
+    .pipe(sass({outputStyle:'compact'}))
+    .pipe(removeEmptyLines())
+    .pipe(gulp.dest('./dist'));
 });
