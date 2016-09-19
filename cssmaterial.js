@@ -1,15 +1,3 @@
-function addScript(url,on) {
-    var script = document.createElement('script');
-    script.setAttribute('src',url);
-    script.addEventListener('load', function(e) { on(); });
-    document.head.appendChild(script);
-}
-// add each to array
-HTMLCollection.prototype.each = function(f) {
-    for (var i = 0; i < this.length; i++) {
-        f(i, this[i]);
-    }
-}
 function reloadCssM() {
     // slide out navbar
     var a = document.getElementById("side-nav") || document.createElement('div');
@@ -18,9 +6,9 @@ function reloadCssM() {
         document.getElementsByClassName("sidenavcontrol")[0].addEventListener('click', function(e) {
             a.setAttribute('aria-expanded', !(a.getAttribute('aria-expanded')===('true')));
         });
-        document.getElementsByTagName("body")[0].addEventListener('click', function(e) {
-            if (e.path.indexOf(document.getElementsByClassName("sidenavcontrol")[0]) === -1) {
-                if (e.path.indexOf(a) === -1) {
+        document.body.addEventListener('click', function(e) {
+            if (e.target.path.indexOf(document.getElementsByClassName("sidenavcontrol")[0]) === -1) {
+                if (e.target.path.indexOf(a) === -1) {
                     if (a.getAttribute('aria-expanded') === 'true') {
                         a.setAttribute('aria-expanded', 'false');
                     }
@@ -34,11 +22,7 @@ function reloadCssM() {
     }
     // dropdown menu (material toolbar)
     document.getElementsByClassName("menu").each(function(i, v) {
-        v.addEventListener("click", function(e) {
-            var el = e.target.parentElement;
-            var open = el.getAttribute('aria-expanded') === "true";
-            el.setAttribute('aria-expanded', open ? "false" : "true");
-        });
+        $cssm.menu(v);
     });
     // autosize textarea
     // inspired by http://codepen.io/vsync/pen/czgrf (MIT)
@@ -53,8 +37,47 @@ function reloadCssM() {
     }
     catch (x) {}
 }
+
 (function() {
-    reloadCssM();
+    // add a js script to the dom and add a callback
+    window.addScript = function(url,on) {
+        var script = document.createElement('script');
+        script.setAttribute('src',url);
+        script.addEventListener('load', function(e) { on(); });
+        document.head.appendChild(script);
+    }
+    // add each to array
+    HTMLCollection.prototype.each = function(f) {
+        for (var i = 0; i < this.length; i++) {
+            f(i, this[i]);
+        }
+    }
+    // get element path
+    Object.defineProperty(Element.prototype, 'path', {
+        get: function() {
+            var resp = [this];
+            return (this.parentElement) ? (resp.concat(this.parentElement.path)) : (resp);
+        }
+    });
+    // setup cssm init Object
+    window.$cssm = {
+        menu: function(n) {
+            document.body.addEventListener('click', function(e) {
+                if (e.target.path.indexOf(n) === -1) {
+                    if (n.getAttribute('aria-expanded') === 'true') {
+                        n.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+            n.addEventListener("click", function(e) {
+                if (e.target.path.indexOf(n) > -1) {
+                    var open = n.getAttribute('aria-expanded') === "true";
+                    n.setAttribute('aria-expanded', open ? "false" : "true");
+                }
+            });
+        }
+    };
+
     // button waves effect
     addScript('https://rawgit.com/fians/Waves/master/src/js/waves.js', function() {
         Waves.attach('.btn');
@@ -64,4 +87,5 @@ function reloadCssM() {
     });
     // add overlay div
     document.body.innerHTML += "<div id='overlay'></div>";
+    reloadCssM();
 })();

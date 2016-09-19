@@ -1,5 +1,10 @@
-.row { width: 100%; }
-.row .col { display: inline-block; vertical-align: top; }
+.row {
+    width: 100%;
+}
+.row .col {
+    display: inline-block;
+    vertical-align: top;
+}
 
 @media (min-width: 0px) {
     .row .col.xs0  { display: none; }

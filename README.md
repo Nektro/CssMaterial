@@ -34,7 +34,6 @@ welcome! See this list below for the current roadmap.
  - [ ] Dialogs
  - [ ] Dividers
  - [ ] Grid Lists
- - [x] Header for main navigation
  - [ ] Lists
  - [ ] Lists w/ Controls
  - [x] Menus (dropdown)
@@ -50,9 +49,9 @@ welcome! See this list below for the current roadmap.
  - [x] Subheadings
  - [x] Steppers
  - [ ] Tabs
- - [x] Text fields __Done, needs work__
- - [ ] Toolbars
- - [ ] Tooltips _(May use https://github.com/kazzkiq/balloon.css (MIT))_
+ - [x] Text fields
+ - [x] Toolbars
+ - [ ] Tooltips _(Via https://github.com/kazzkiq/balloon.css (MIT))_
 
 ## Material Design
 Material Design is a layout and design philosophy made by Google originally for the Android project. Since
